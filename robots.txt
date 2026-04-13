@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lucastefan112.github.io/CV/sitemap.xml
