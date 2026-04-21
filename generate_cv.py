@@ -301,6 +301,9 @@ def build_cv():
         ("AI Ethics", "Kaggle"),
     ])
     pdf.inline_certs([
+        ("DevSecOps (THM-0D2ACJQ9DS)", "TryHackMe"),
+    ])
+    pdf.inline_certs([
         ("Security Engineer, Jr Penetration Tester, Cyber Security 101, Web Fundamentals, Pre Security", "TryHackMe"),
     ])
 
