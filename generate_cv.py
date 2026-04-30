@@ -193,11 +193,12 @@ def build_cv():
     pdf.set_text_color(*DARK)
     pdf.multi_cell(0, 3.8,
         "Full-stack engineer with 5+ years of experience designing, building, and owning production systems end-to-end. "
-        "Currently engineering high-throughput detection pipelines at Bitdefender while simultaneously founding and building "
-        "Mazely \u2014 a production SaaS indoor navigation platform with a 20+ entity graph-based data model, real-time pathfinding, "
-        "and enterprise analytics. Proven track record of architecting multi-tenant SaaS platforms, leading technical decisions "
-        "across teams, and shipping complex systems from zero to production. Seeking Senior Engineer or Tech Lead roles where "
-        "I can drive system design, own architecture, and deliver measurable business impact.",
+        "Currently engineering high-throughput detection pipelines at Bitdefender while simultaneously building two SaaS products: "
+        "Mazely \u2014 a production indoor navigation platform with a 20+ entity graph-based data model, real-time pathfinding, "
+        "and enterprise analytics \u2014 and Processly, a visual process & project orchestration platform built around a DAG editor "
+        "that turns repeatable workflows into one-click, schedulable project runs. Proven track record of architecting multi-tenant "
+        "SaaS platforms, leading technical decisions across teams, and shipping complex systems from zero to production. Seeking Senior "
+        "Engineer or Tech Lead roles where I can drive system design, own architecture, and deliver measurable business impact.",
         new_x="LMARGIN", new_y="NEXT"
     )
 
@@ -238,6 +239,19 @@ def build_cv():
         "Stack: ",
         "Next.js 15, React 19, TypeScript, PostgreSQL, Prisma ORM, Docker, MinIO, Vercel  |  ",
         "187 source files, 62 automated tests, 500+ line schema"
+    )
+
+    # — Processly —
+    pdf.job_header("Founder & Engineer", "Processly", "2026 — Present", "Iași, Romania")
+    pdf.bullet("Designed and built Processly, a SaaS process & project orchestration platform that turns repeatable workflows into visual, executable processes — templates that generate live, state-tracked project runs on demand or on a recurring schedule")
+    pdf.bullet("Architected the core process/project domain model: a graph of typed steps with dependencies, per-step fields, role-based ownership, SLAs, and immutable run history — separating workflow design from workflow execution")
+    pdf.bullet("Built a visual DAG editor (React Flow) for non-technical users to compose multi-step workflows, with drag-and-drop step authoring, dependency wiring, and live validation")
+    pdf.bullet("Implemented project generation pipeline: one-click instantiation, scheduled recurrence, and per-run state machine that isolates in-flight projects from process edits")
+    pdf.bullet("Engineered multi-tenant backend with Prisma/PostgreSQL, S3-compatible object storage (MinIO) for attachments, Redis-backed sessions, and Jest + Playwright test coverage")
+    pdf.bullet_tech_line(
+        "Stack: ",
+        "Next.js 16, React 19, TypeScript, PostgreSQL, Prisma ORM, React Flow, Redis, MinIO, next-intl  |  ",
+        "DAG-based workflow engine, full i18n, e2e + unit tests"
     )
 
     # — Enovis —
@@ -301,6 +315,7 @@ def build_cv():
         ("AI Ethics", "Kaggle"),
     ])
     pdf.inline_certs([
+        ("SOC Level 1 (THM-UDEQNFDHMG)", "TryHackMe"),
         ("DevSecOps (THM-0D2ACJQ9DS)", "TryHackMe"),
     ])
     pdf.inline_certs([
