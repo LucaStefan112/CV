@@ -3,486 +3,534 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luca-Ștefan Tamaș — Senior Full-Stack Engineer</title>
-  <meta name="description" content="Luca-Ștefan Tamaș — Senior Full-Stack Engineer, System Design, SaaS Builder. Building production systems from database schema to deployment pipeline.">
+  <title>Luca-Ștefan Tamaș — Systems &amp; Security Engineer</title>
+  <meta name="description" content="Systems and security engineer designing scalable SaaS platforms. Security engineering at Bitdefender; founder of Mazely and Processly.">
   <meta name="author" content="Luca-Ștefan Tamaș">
-  <meta name="theme-color" content="#1a1a2e">
+  <meta name="keywords" content="systems engineer, distributed systems, security engineer, SaaS architecture, staff engineer, founding engineer, backend architecture, multi-tenant SaaS, system design">
+  <meta name="theme-color" content="#0e1422">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Luca-Ștefan Tamaș — Senior Full-Stack Engineer">
-  <meta property="og:description" content="Full-stack engineer building production systems end-to-end. Founder of Mazely, an indoor navigation SaaS. Currently at Bitdefender.">
+  <meta property="og:title" content="Luca-Ștefan Tamaș — Systems &amp; Security Engineer">
+  <meta property="og:description" content="Designs production systems where complexity is bounded by intent. Security engineering at Bitdefender; founder of Mazely and Processly.">
   <meta property="og:url" content="https://lucastefan112.github.io/CV/">
   <meta property="og:site_name" content="Luca-Ștefan Tamaș">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Luca-Ștefan Tamaș — Systems &amp; Security Engineer">
+  <meta name="twitter:description" content="Designs production systems where complexity is bounded by intent.">
 
   <link rel="canonical" href="https://lucastefan112.github.io/CV/">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%25' stop-color='%232B5797'/><stop offset='100%25' stop-color='%230EA5A0'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23g)'/><text x='50' y='68' font-family='system-ui,sans-serif' font-size='52' font-weight='800' fill='white' text-anchor='middle'>LT</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Structured data: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Luca-Ștefan Tamaș",
+    "url": "https://lucastefan112.github.io/CV/",
+    "jobTitle": "Systems & Security Engineer",
+    "description": "Systems and security engineer designing scalable SaaS platforms and detection pipelines.",
+    "email": "lucastefantamasdev@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Iași",
+      "addressCountry": "RO"
+    },
+    "sameAs": [
+      "https://github.com/LucaStefan112",
+      "https://www.linkedin.com/in/luca-%C8%99tefan-tama%C8%99-a40282229/",
+      "https://mazely.app",
+      "https://processly.app"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Bitdefender"
+    },
+    "knowsAbout": [
+      "Distributed Systems",
+      "Security Engineering",
+      "SaaS Architecture",
+      "Detection Pipelines",
+      "Multi-Tenant Systems",
+      "DevOps"
+    ]
+  }
+  </script>
 </head>
 <body>
 
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <!-- Navbar -->
-  <nav class="navbar" id="navbar">
+  <nav class="navbar" id="navbar" aria-label="Primary">
     <div class="nav-container">
-      <a href="#hero" class="nav-logo">LT</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-        <span class="hamburger"></span>
+      <a href="#hero" class="nav-logo" aria-label="Home">LT</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+        <span class="hamburger" aria-hidden="true"></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#philosophy" class="nav-link">Philosophy</a></li>
+        <li><a href="#systems" class="nav-link">Systems</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#expertise" class="nav-link">Expertise</a></li>
+        <li><a href="#writing" class="nav-link">Writing</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section class="hero" id="hero">
-    <div class="hero-bg-pattern"></div>
-    <div class="hero-content">
-      <h1 class="hero-name anim-hero" data-delay="0">Luca-Ștefan Tamaș</h1>
-      <p class="hero-subtitle anim-hero" data-delay="1">
-        Senior Full-Stack Engineer <span class="separator">&middot;</span> System Design <span class="separator">&middot;</span> SaaS Builder
-      </p>
-      <div class="hero-buttons anim-hero" data-delay="2">
-        <a href="Luca_Stefan_Tamas_CV.pdf" class="btn btn-primary" download>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Download CV
-        </a>
-        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-      </div>
-      <div class="hero-socials anim-hero" data-delay="3">
-        <a href="https://github.com/LucaStefan112" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/luca-%C8%99tefan-tama%C8%99-a40282229/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-        <a href="mailto:lucastefantamasdev@gmail.com" aria-label="Email">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
-        </a>
-      </div>
-    </div>
-  </section>
+  <main id="main">
 
-  <!-- About -->
-  <section class="section about" id="about">
-    <div class="glow-orb glow-orb-1"></div>
-    <div class="glow-orb glow-orb-2"></div>
-    <div class="container">
-      <h2 class="section-title reveal">About Me</h2>
-      <p class="about-bio reveal">
-        I'm a full-stack engineer with 5+ years of experience building production systems from database schema to deployment pipeline. Currently at Bitdefender engineering detection pipelines while building Mazely &mdash; an indoor navigation SaaS I founded from scratch &mdash; and Processly, a visual process &amp; project orchestration platform. I thrive at the intersection of system design, product thinking, and hands-on engineering.
-      </p>
-      <div class="stats-grid">
-        <div class="stat-card reveal">
-          <svg class="stat-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          <span class="stat-number">5+</span>
-          <span class="stat-label">Years Experience</span>
+    <!-- Hero -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="container hero-content">
+        <p class="eyebrow anim-hero" data-delay="0">Iași, Romania · Open to remote roles, EU &amp; US</p>
+        <h1 class="hero-title anim-hero" id="hero-title" data-delay="1">
+          Systems &amp; Security Engineer designing scalable SaaS platforms.
+        </h1>
+        <p class="hero-lede anim-hero" data-delay="2">
+          I design production systems where complexity is bounded by intent, not accident.
+          From security engineering work at Bitdefender to a graph-based indoor navigation
+          platform I founded, my focus is the small set of architectural decisions that
+          determine whether a system holds under load, scales with the team, and survives
+          its second year.
+        </p>
+        <div class="hero-actions anim-hero" data-delay="3">
+          <a href="Luca_Stefan_Tamas_CV.pdf" class="btn btn-primary" download>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download CV
+          </a>
+          <a href="#systems" class="btn btn-ghost">View systems</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
         </div>
-        <div class="stat-card reveal">
-          <svg class="stat-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 3h-8l-2 4h12l-2-4z"/></svg>
-          <span class="stat-number">4</span>
-          <span class="stat-label">Companies</span>
-        </div>
-        <div class="stat-card reveal">
-          <svg class="stat-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
-          <span class="stat-number">3</span>
-          <span class="stat-label">SaaS Built</span>
-        </div>
-        <div class="stat-card reveal">
-          <svg class="stat-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-          <span class="stat-number">20+</span>
-          <span class="stat-label">DB Models</span>
-        </div>
+        <ul class="hero-meta anim-hero" data-delay="4">
+          <li><span class="meta-key">Now</span><span class="meta-val">Security software engineer at Bitdefender</span></li>
+          <li><span class="meta-key">Building</span><span class="meta-val"><a href="https://mazely.app" target="_blank" rel="noopener noreferrer">Mazely</a> · <a href="https://processly.app" target="_blank" rel="noopener noreferrer">Processly</a></span></li>
+          <li><span class="meta-key">Direction</span><span class="meta-val">Distributed systems &amp; security architecture</span></li>
+        </ul>
       </div>
-      <div class="tech-stack reveal">
-        <h3 class="tech-stack-title">Tech Stack</h3>
-        <div class="tech-group">
-          <span class="tech-group-label">Frontend</span>
-          <div class="pills">
-            <span class="pill">React</span>
-            <span class="pill">Next.js</span>
-            <span class="pill">Angular</span>
-            <span class="pill">TypeScript</span>
-            <span class="pill">Tailwind CSS</span>
-            <span class="pill">Flutter</span>
-          </div>
-        </div>
-        <div class="tech-group">
-          <span class="tech-group-label">Backend</span>
-          <div class="pills">
-            <span class="pill">Node.js</span>
-            <span class="pill">NestJS</span>
-            <span class="pill">Express</span>
-            <span class="pill">Python</span>
-            <span class="pill">Kafka</span>
-            <span class="pill">REST APIs</span>
-            <span class="pill">JWT Auth</span>
-          </div>
-        </div>
-        <div class="tech-group">
-          <span class="tech-group-label">Data</span>
-          <div class="pills">
-            <span class="pill">PostgreSQL</span>
-            <span class="pill">MySQL</span>
-            <span class="pill">MongoDB</span>
-            <span class="pill">Prisma</span>
-            <span class="pill">Redis</span>
-          </div>
-        </div>
-        <div class="tech-group">
-          <span class="tech-group-label">DevOps &amp; Cloud</span>
-          <div class="pills">
-            <span class="pill">Docker</span>
-            <span class="pill">Kubernetes</span>
-            <span class="pill">Azure</span>
-            <span class="pill">Vercel</span>
-            <span class="pill">CI/CD</span>
-            <span class="pill">Git</span>
-          </div>
-        </div>
-        <div class="tech-group">
-          <span class="tech-group-label">Other</span>
-          <div class="pills">
-            <span class="pill">System Design</span>
-            <span class="pill">RBAC</span>
-            <span class="pill">Security</span>
-            <span class="pill">C / C++</span>
-            <span class="pill">Lex / Yacc</span>
-          </div>
+    </section>
+
+    <!-- Engineering Philosophy -->
+    <section class="section section-divider" id="philosophy" aria-labelledby="philosophy-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-eyebrow">01 · Engineering Philosophy</p>
+          <h2 class="section-title" id="philosophy-title">How I think about building software.</h2>
+        </header>
+
+        <div class="principles">
+          <article class="principle reveal">
+            <h3 class="principle-title">Systems are decisions, not technologies.</h3>
+            <p>The choice of database matters less than the choice of consistency model. The framework matters less than the boundary it draws. I optimise for the small number of decisions that everything else inherits — domain model, transactional shape, failure semantics — and treat tooling as replaceable.</p>
+          </article>
+
+          <article class="principle reveal">
+            <h3 class="principle-title">Production is the only honest environment.</h3>
+            <p>A system isn't designed until it has run in production for a quarter. Until then it is a hypothesis. I build with that in mind: observability before features, rollout strategy before launch, and the assumption that the worst incident will happen on the worst day.</p>
+          </article>
+
+          <article class="principle reveal">
+            <h3 class="principle-title">Security is a property of design, not a layer on top.</h3>
+            <p>Trust boundaries, tenant isolation, secret lifecycle, blast radius — these are decided at the schema, not the firewall. My security work at Bitdefender and Aperio reinforced what my SaaS work taught me: the cheapest place to fix a vulnerability is the one before it exists.</p>
+          </article>
+
+          <article class="principle reveal">
+            <h3 class="principle-title">Scale follows clarity.</h3>
+            <p>Every system I have rescued from a scaling problem turned out to have a clarity problem first — implicit ownership, fuzzy contracts, mutable state where there should have been events. Make the model legible, and the bottleneck usually moves to a place you can actually fix.</p>
+          </article>
+
+          <article class="principle reveal">
+            <h3 class="principle-title">Product judgment is engineering judgment.</h3>
+            <p>Founding two SaaS products taught me that the most expensive engineering decision is usually building the wrong thing precisely. I write code that I am willing to delete, and I treat "we don't need this yet" as a senior-level skill.</p>
+          </article>
         </div>
       </div>
-      <div class="certifications reveal">
-        <h3 class="tech-stack-title">Certifications</h3>
-        <div class="cert-grid">
-          <div class="cert-item">
-            <svg class="cert-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-            <div>
-              <span class="cert-name">Meta Data Analyst</span>
-              <span class="cert-issuer">Meta</span>
+    </section>
+
+    <!-- Systems / Case Studies -->
+    <section class="section" id="systems" aria-labelledby="systems-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-eyebrow">02 · Systems I've Designed</p>
+          <h2 class="section-title" id="systems-title">Case studies in production system design.</h2>
+          <p class="section-lede">
+            Each of the systems below is presented as the engineering team would discuss it: the problem,
+            the constraints that bounded the solution, the architectural decisions and their tradeoffs,
+            and what I learned in production.
+          </p>
+        </header>
+
+        <!-- Mazely -->
+        <article class="case reveal">
+          <header class="case-head">
+            <p class="case-tag">SaaS · Spatial systems · Multi-tenant</p>
+            <h3 class="case-title">Mazely — Indoor navigation for institutional buildings</h3>
+            <p class="case-role">Founder &amp; engineer · 2026 → present · <a href="https://mazely.app" target="_blank" rel="noopener noreferrer">mazely.app</a></p>
+          </header>
+
+          <dl class="case-body">
+            <div class="case-row">
+              <dt>Problem</dt>
+              <dd>Visitors get lost in hospitals, universities, and government buildings. Existing solutions require beacon hardware, app installs, and full-time maintenance — costs that exclude the buildings that need wayfinding most.</dd>
             </div>
-          </div>
-          <div class="cert-item">
-            <svg class="cert-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-            <div>
-              <span class="cert-name">Business Intelligence</span>
-              <span class="cert-issuer">Google</span>
+            <div class="case-row">
+              <dt>Constraints</dt>
+              <dd>Zero hardware deployment. No app install. Multi-tenant with strict per-building isolation. Accessibility constraints (wheelchair-only paths, restricted floors) treated as first-class. Single founder-engineer — operational simplicity is non-negotiable.</dd>
             </div>
-          </div>
-          <div class="cert-item">
-            <svg class="cert-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-            <div>
-              <span class="cert-name">Advanced Tableau</span>
-              <span class="cert-issuer">Corporate Finance Institute</span>
+            <div class="case-row">
+              <dt>Architectural decisions</dt>
+              <dd>
+                <ul>
+                  <li><strong>Graph-based spatial model</strong> with 20+ entity types and 7 connection types — paths, doors, elevators, stairs, accessibility predicates — instead of a flat coordinate system. Pathfinding becomes a constrained graph query.</li>
+                  <li><strong>Photo-corridor wayfinding</strong>: directional frame sequences indexed against the graph, replacing GPS or beacon trilateration. Cheap to deploy, robust indoors.</li>
+                  <li><strong>QR-code entry points</strong> as session bootstrap — no install, no account, but session-scoped analytics that survive page reload.</li>
+                  <li><strong>Server-rendered frontend (Next.js)</strong> for fast cold starts on shared kiosk devices and low-bandwidth visitor networks.</li>
+                </ul>
+              </dd>
             </div>
-          </div>
-          <div class="cert-item">
-            <svg class="cert-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-            <div>
-              <span class="cert-name">Advanced SQL, Data Cleaning, AI Ethics</span>
-              <span class="cert-issuer">Kaggle</span>
+            <div class="case-row">
+              <dt>Tradeoffs</dt>
+              <dd>Manual photo capture is the deployment cost we accept in exchange for hardware-free operation. The graph model is more complex than a flat map, but it pays back the moment accessibility constraints, multi-floor routes, or per-tenant overrides enter the picture — which is on day one.</dd>
             </div>
-          </div>
-          <div class="cert-item">
-            <svg class="cert-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-            <div>
-              <a class="cert-name" href="https://tryhackme.com/certificate/THM-UDEQNFDHMG" target="_blank" rel="noopener noreferrer">SOC Level 1</a>
-              <span class="cert-issuer">TryHackMe</span>
+            <div class="case-row">
+              <dt>Stack</dt>
+              <dd><span class="tech-tag">Next.js 15</span><span class="tech-tag">React 19</span><span class="tech-tag">TypeScript</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Prisma</span><span class="tech-tag">Docker</span><span class="tech-tag">MinIO</span></dd>
             </div>
-          </div>
-          <div class="cert-item">
-            <svg class="cert-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-            <div>
-              <a class="cert-name" href="https://tryhackme.com/certificate/THM-0D2ACJQ9DS" target="_blank" rel="noopener noreferrer">DevSecOps</a>
-              <span class="cert-issuer">TryHackMe</span>
+            <div class="case-row">
+              <dt>Outcome</dt>
+              <dd>Production platform serving institutional buildings; multi-tenant admin with RBAC, branding, analytics, and four-language i18n; ~190 source files, 60+ automated tests, ~500-line schema.</dd>
             </div>
-          </div>
-          <div class="cert-item">
-            <svg class="cert-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-            <div>
-              <span class="cert-name">Security Engineer</span>
-              <span class="cert-issuer">TryHackMe</span>
+            <div class="case-row">
+              <dt>Lesson</dt>
+              <dd>Two weeks spent on the domain model bought a year of feature velocity. Domain modelling is leverage; the rest of the stack is tactics.</dd>
             </div>
-          </div>
-          <div class="cert-item">
-            <svg class="cert-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-            <div>
-              <span class="cert-name">Jr Penetration Tester, Cyber Security 101, Web Fundamentals, Pre Security</span>
-              <span class="cert-issuer">TryHackMe</span>
+          </dl>
+        </article>
+
+        <!-- Processly -->
+        <article class="case reveal">
+          <header class="case-head">
+            <p class="case-tag">SaaS · Workflow engine · DAG execution</p>
+            <h3 class="case-title">Processly — Visual process &amp; project orchestration</h3>
+            <p class="case-role">Founder &amp; engineer · 2026 → present · <a href="https://processly.app" target="_blank" rel="noopener noreferrer">processly.app</a></p>
+          </header>
+
+          <dl class="case-body">
+            <div class="case-row">
+              <dt>Problem</dt>
+              <dd>Operations teams own repeatable processes that live in tribal knowledge or static documents. Translating them into live, observable, schedulable runs usually requires either rigid SaaS templates or a developer team — neither of which scales.</dd>
             </div>
-          </div>
-        </div>
+            <div class="case-row">
+              <dt>Constraints</dt>
+              <dd>Authors are non-technical. Process edits must not corrupt in-flight project runs. Roles, ownership, and SLAs are first-class — not bolted on. The visual editor must be the source of truth, not a UI over a hand-written DSL.</dd>
+            </div>
+            <div class="case-row">
+              <dt>Architectural decisions</dt>
+              <dd>
+                <ul>
+                  <li><strong>DAG (not state machine)</strong> as the execution model — chosen for parallel branches, clearer mental model for non-engineers, and natural support for SLAs at the step level.</li>
+                  <li><strong>Immutable process templates → mutable run instances.</strong> A run snapshots its template at instantiation. Editing the template never reaches in-flight runs. This single rule eliminated an entire class of "did the spec change while I was running it?" bugs.</li>
+                  <li><strong>React Flow visual editor</strong> as the canonical authoring surface, with live validation against the DAG invariants (no cycles, no orphan branches, all roles assigned).</li>
+                  <li><strong>Generation pipeline</strong>: one-click instantiation, scheduled recurrence, and a per-run state machine isolating runtime state from definition state.</li>
+                </ul>
+              </dd>
+            </div>
+            <div class="case-row">
+              <dt>Tradeoffs</dt>
+              <dd>Snapshotting templates per-run costs storage and adds migration complexity for "improve this step on all live runs" cases. Worth it: the alternative is unbounded coupling between definition and execution, which is the failure mode of every workflow tool I have used as a customer.</dd>
+            </div>
+            <div class="case-row">
+              <dt>Stack</dt>
+              <dd><span class="tech-tag">Next.js 16</span><span class="tech-tag">React 19</span><span class="tech-tag">TypeScript</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Prisma</span><span class="tech-tag">React Flow</span><span class="tech-tag">Redis</span><span class="tech-tag">MinIO</span></dd>
+            </div>
+            <div class="case-row">
+              <dt>Lesson</dt>
+              <dd>Versioning and immutability of process definitions is the single decision that separates a workflow engine from a glorified checklist. Pick the boundary first; everything else falls out.</dd>
+            </div>
+          </dl>
+        </article>
+
+        <!-- Enovis -->
+        <article class="case reveal">
+          <header class="case-head">
+            <p class="case-tag">Multi-tenant SaaS · Platform architecture</p>
+            <h3 class="case-title">Multi-tenant SaaS platform — Enovis</h3>
+            <p class="case-role">Lead full-stack engineer · 2023 — 2025</p>
+          </header>
+
+          <dl class="case-body">
+            <div class="case-row">
+              <dt>Problem</dt>
+              <dd>Bundle four operational domains — BI, ERP, DMS, BPMS — into a single platform without each tenant clobbering the others or each domain accreting bespoke auth.</dd>
+            </div>
+            <div class="case-row">
+              <dt>Architectural decisions</dt>
+              <dd>
+                <ul>
+                  <li><strong>Shared schema, row-level tenant scoping</strong>, with RBAC enforced at the API boundary — chosen over per-tenant DBs for operational simplicity. Strict tenant isolation invariants encoded in the data layer, not the controllers.</li>
+                  <li><strong>NestJS module boundaries</strong> aligned to product domains, so BI and ERP could evolve at different cadences without leaking abstractions.</li>
+                  <li><strong>System design review</strong> introduced as a precondition for new features — the highest-leverage process change of my time on the platform.</li>
+                </ul>
+              </dd>
+            </div>
+            <div class="case-row">
+              <dt>Stack</dt>
+              <dd><span class="tech-tag">NestJS</span><span class="tech-tag">Next.js</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Prisma</span><span class="tech-tag">CI/CD</span></dd>
+            </div>
+            <div class="case-row">
+              <dt>Lesson</dt>
+              <dd>Multi-tenancy is an architectural invariant, not a feature. Once it leaks into business logic, it never fully comes out.</dd>
+            </div>
+          </dl>
+        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Experience -->
-  <section class="section experience" id="experience">
-    <div class="container">
-      <h2 class="section-title reveal">Experience</h2>
-      <div class="timeline">
+    <!-- Experience -->
+    <section class="section section-alt" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-eyebrow">03 · Professional Experience</p>
+          <h2 class="section-title" id="experience-title">Roles, framed by the risk I removed.</h2>
+        </header>
 
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <span class="timeline-icon" style="background: linear-gradient(135deg, #0EA5A0, #2B5797);">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              </span>
-              <h3 class="timeline-company">Mazely</h3>
-              <a href="https://mazely.app" target="_blank" rel="noopener noreferrer" class="timeline-link">mazely.app</a>
+        <ol class="timeline" role="list">
+
+          <li class="t-item reveal">
+            <div class="t-meta">
+              <time class="t-date">2025 → Present</time>
+              <span class="t-loc">Iași · Hybrid</span>
             </div>
-            <span class="timeline-role">Founder &amp; Engineer</span>
-            <span class="timeline-date">Mar 2026 &ndash; Present</span>
-            <p class="timeline-desc">Founded a production SaaS indoor navigation platform. Architected a graph-based data model with 20+ entities, photo-guided wayfinding, real-time analytics, and multi-tenant admin.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <span class="timeline-icon" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="8" x="3" y="3" rx="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4"/><rect width="8" height="8" x="13" y="13" rx="2"/></svg>
-              </span>
-              <h3 class="timeline-company">Processly</h3>
-              <a href="https://processly.app" target="_blank" rel="noopener noreferrer" class="timeline-link">processly.app</a>
+            <div class="t-body">
+              <h3 class="t-role">Security Software Engineer</h3>
+              <p class="t-company">Bitdefender</p>
+              <p class="t-summary">Engineering on production security systems within Bitdefender's security platform. Working at the intersection of distributed systems and security, with a focus on services that scale with the trust they require. Specifics under NDA.</p>
             </div>
-            <span class="timeline-role">Founder &amp; Engineer</span>
-            <span class="timeline-date">Jan 2026 &ndash; Present</span>
-            <p class="timeline-desc">Founded a SaaS process &amp; project orchestration platform. Designed a DAG-based workflow engine that turns repeatable work into visual processes &mdash; templates that generate live, state-tracked project runs on demand or on a schedule.</p>
-          </div>
-        </div>
+          </li>
 
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <span class="timeline-icon" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              </span>
-              <h3 class="timeline-company">Bitdefender</h3>
+          <li class="t-item reveal">
+            <div class="t-meta">
+              <time class="t-date">2026 → Present</time>
+              <span class="t-loc">Founder</span>
             </div>
-            <span class="timeline-role">Security Software Engineer</span>
-            <span class="timeline-date">Oct 2025 &ndash; Present</span>
-            <p class="timeline-desc">Engineering high-throughput detection pipelines with Kafka, Kubernetes, and LLM-assisted automation. Building distributed backend services processing large-scale network traffic.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <span class="timeline-icon" style="background: linear-gradient(135deg, #3498db, #2980b9);">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-              </span>
-              <h3 class="timeline-company">Enovis Software</h3>
+            <div class="t-body">
+              <h3 class="t-role">Founder &amp; Engineer — Mazely</h3>
+              <p class="t-company"><a href="https://mazely.app" target="_blank" rel="noopener noreferrer">mazely.app</a></p>
+              <p class="t-summary">Took an indoor-navigation product from problem statement to multi-tenant production platform as a single founder-engineer. Architected the spatial graph model, photo-guided wayfinding, analytics pipeline, and admin platform — the kind of end-to-end ownership that forces every architectural decision to also be an operational one.</p>
             </div>
-            <span class="timeline-role">Full-Stack Developer</span>
-            <span class="timeline-date">Aug 2023 &ndash; Oct 2025</span>
-            <p class="timeline-desc">Led architecture of a multi-tenant SaaS platform (BI, ERP, DMS, BPMS). Designed RBAC, built with NestJS/PostgreSQL, established CI/CD and system design reviews.</p>
-          </div>
-        </div>
+          </li>
 
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <span class="timeline-icon" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-              </span>
-              <h3 class="timeline-company">Aperio Intelligence</h3>
+          <li class="t-item reveal">
+            <div class="t-meta">
+              <time class="t-date">2026 → Present</time>
+              <span class="t-loc">Founder</span>
             </div>
-            <span class="timeline-role">Security R&amp;D Engineer</span>
-            <span class="timeline-date">Aug 2024 &ndash; Jul 2025</span>
-            <p class="timeline-desc">Built centralized auth platform and payment service. Deployed cloud-native solutions on Azure with Key Vault, managed identities, and network segmentation.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <span class="timeline-icon" style="background: linear-gradient(135deg, #e67e22, #d35400);">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
-              </span>
-              <h3 class="timeline-company">Codefy Software</h3>
+            <div class="t-body">
+              <h3 class="t-role">Founder &amp; Engineer — Processly</h3>
+              <p class="t-company"><a href="https://processly.app" target="_blank" rel="noopener noreferrer">processly.app</a></p>
+              <p class="t-summary">Designed a DAG-based workflow engine and visual authoring surface that turns operational runbooks into live, schedulable, role-aware project runs. The hard call — immutable templates, mutable runs — eliminated whole classes of failure that other workflow tools accept as inevitable.</p>
             </div>
-            <span class="timeline-role">Full-Stack Developer</span>
-            <span class="timeline-date">Feb 2022 &ndash; Sep 2024</span>
-            <p class="timeline-desc">Shipped web apps for hospitality and marketplace clients. React, Angular, Node.js, PostgreSQL, MySQL.</p>
-          </div>
-        </div>
+          </li>
 
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <span class="timeline-icon" style="background: linear-gradient(135deg, #1abc9c, #16a085);">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-              </span>
-              <h3 class="timeline-company">Freelance</h3>
+          <li class="t-item reveal">
+            <div class="t-meta">
+              <time class="t-date">2023 — 2025</time>
+              <span class="t-loc">Iași · Hybrid</span>
             </div>
-            <span class="timeline-role">Full-Stack &amp; Mobile Developer</span>
-            <span class="timeline-date">Jun 2020 &ndash; Feb 2022</span>
-            <p class="timeline-desc">Delivered 10+ client projects end-to-end. Flutter, Android, React, Angular, Node.js. Published on Google Play &amp; App Store.</p>
-          </div>
-        </div>
+            <div class="t-body">
+              <h3 class="t-role">Lead Full-Stack Engineer</h3>
+              <p class="t-company">Enovis Software</p>
+              <p class="t-summary">Drove the architecture of a multi-tenant SaaS platform spanning BI, ERP, DMS, and BPMS. Set the tenant-isolation contract, RBAC model, and CI/CD baseline; introduced system design reviews as a precondition for new features — the change with the largest compounding effect on platform stability.</p>
+            </div>
+          </li>
 
+          <li class="t-item reveal">
+            <div class="t-meta">
+              <time class="t-date">2024 — 2025</time>
+              <span class="t-loc">Remote · UK</span>
+            </div>
+            <div class="t-body">
+              <h3 class="t-role">Security R&amp;D Engineer</h3>
+              <p class="t-company">Aperio Intelligence</p>
+              <p class="t-summary">Designed and built a centralized auth platform and a payment service with end-to-end encryption, secret lifecycle management on Azure Key Vault, and least-privilege IAM. Made the cloud footprint defensible at the identity and network layer, not just at the application boundary.</p>
+            </div>
+          </li>
+
+          <li class="t-item reveal">
+            <div class="t-meta">
+              <time class="t-date">2022 — 2024</time>
+              <span class="t-loc">Iași</span>
+            </div>
+            <div class="t-body">
+              <h3 class="t-role">Full-Stack Engineer</h3>
+              <p class="t-company">Codefy Software</p>
+              <p class="t-summary">Shipped client-facing web platforms in hospitality and marketplace domains, owning the full path from schema to UI. The engineering reps that built the instinct for which decisions stay in code and which need to live in the data model.</p>
+            </div>
+          </li>
+
+          <li class="t-item reveal">
+            <div class="t-meta">
+              <time class="t-date">2020 — 2022</time>
+              <span class="t-loc">Independent</span>
+            </div>
+            <div class="t-body">
+              <h3 class="t-role">Independent Engineer</h3>
+              <p class="t-company">Freelance · Web &amp; mobile</p>
+              <p class="t-summary">Delivered ten-plus client projects end-to-end across web and mobile, including apps published on Google Play and the App Store. Sole technical owner — every decision had a name attached to it, which is still the way I prefer to work.</p>
+            </div>
+          </li>
+
+        </ol>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects -->
-  <section class="section projects" id="projects">
-    <div class="container">
-      <h2 class="section-title reveal">Projects</h2>
+    <!-- Core Expertise -->
+    <section class="section" id="expertise" aria-labelledby="expertise-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-eyebrow">04 · Core Expertise</p>
+          <h2 class="section-title" id="expertise-title">Areas where I do my best work.</h2>
+          <p class="section-lede">Technologies appear as evidence, not as identity. The expertise is in the judgment that decided when to use them.</p>
+        </header>
 
-      <div class="project-featured reveal">
-        <div class="project-card featured-card">
-          <div class="project-card-content">
-            <span class="project-badge">Featured</span>
-            <h3 class="project-title"><svg class="project-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 10-16 0c0 3 2.7 7 8 11.7z"/></svg> Mazely</h3>
-            <p class="project-desc">Production SaaS indoor navigation platform for hospitals, universities, and government buildings. Graph-based pathfinding, photo-guided wayfinding, multi-tenant admin, analytics dashboard.</p>
-            <div class="project-pills">
-              <span class="pill">Next.js</span>
-              <span class="pill">React</span>
-              <span class="pill">TypeScript</span>
-              <span class="pill">PostgreSQL</span>
-              <span class="pill">Prisma</span>
-              <span class="pill">Docker</span>
-            </div>
-            <a href="https://mazely.app" target="_blank" rel="noopener noreferrer" class="project-link">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              Visit mazely.app
-            </a>
-          </div>
+        <div class="expertise-grid">
+
+          <article class="expertise reveal">
+            <h3 class="expertise-title">Distributed Systems &amp; Backend Architecture</h3>
+            <p class="expertise-body">Event-driven pipelines, partitioned consumers, idempotent processing, and the operational discipline to keep them legible. I design for the day the throughput doubles and the day the consumer crashes mid-batch.</p>
+            <p class="expertise-tech"><span class="tech-tag">Kafka</span><span class="tech-tag">Kubernetes</span><span class="tech-tag">Node.js</span><span class="tech-tag">NestJS</span><span class="tech-tag">Python</span><span class="tech-tag">Redis</span></p>
+          </article>
+
+          <article class="expertise reveal">
+            <h3 class="expertise-title">Security Engineering &amp; Detection Pipelines</h3>
+            <p class="expertise-body">Detection rule design, anomaly baselines, tenant isolation, secret lifecycle, and the integration of LLM-assisted automation behind validation gates. Security as a property of design, with observability as the proof.</p>
+            <p class="expertise-tech"><span class="tech-tag">Detection engineering</span><span class="tech-tag">OpenSearch / ELK</span><span class="tech-tag">Azure Key Vault</span><span class="tech-tag">RBAC</span><span class="tech-tag">JWT / OAuth</span></p>
+          </article>
+
+          <article class="expertise reveal">
+            <h3 class="expertise-title">SaaS Platform Design</h3>
+            <p class="expertise-body">Multi-tenant data modelling, organizational RBAC, audit trails, and the difference between tenancy as a feature versus tenancy as an invariant. Two founder-built SaaS products and a four-domain enterprise platform behind it.</p>
+            <p class="expertise-tech"><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Prisma</span><span class="tech-tag">Next.js</span><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">i18n</span></p>
+          </article>
+
+          <article class="expertise reveal">
+            <h3 class="expertise-title">DevOps &amp; Infrastructure</h3>
+            <p class="expertise-body">Container-first delivery, environment parity, CI/CD pipelines that are aware of dependency and security state, and cloud footprints that are defensible at the identity layer. Boring infrastructure in service of fast product work.</p>
+            <p class="expertise-tech"><span class="tech-tag">Docker</span><span class="tech-tag">Kubernetes</span><span class="tech-tag">Azure</span><span class="tech-tag">Vercel</span><span class="tech-tag">GitHub Actions</span><span class="tech-tag">TeamCity</span></p>
+          </article>
+
+          <article class="expertise reveal">
+            <h3 class="expertise-title">Data Modelling &amp; Domain Design</h3>
+            <p class="expertise-body">Graph models for spatial and process domains, immutable-template / mutable-instance separations, schema evolution under live traffic. The work that decides whether the next year of features compounds or fights the model.</p>
+            <p class="expertise-tech"><span class="tech-tag">Graph models</span><span class="tech-tag">DAGs</span><span class="tech-tag">Schema design</span><span class="tech-tag">Migrations</span></p>
+          </article>
+
         </div>
-      </div>
 
-      <div class="project-featured reveal">
-        <div class="project-card featured-card">
-          <div class="project-card-content">
-            <span class="project-badge">Featured</span>
-            <h3 class="project-title"><svg class="project-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg> Processly</h3>
-            <p class="project-desc">SaaS process &amp; project orchestration platform. Design repeatable workflows once on a visual DAG canvas, then generate live state-tracked project runs on demand or on a schedule. Visual editor, role-based execution, recurrence, analytics.</p>
-            <div class="project-pills">
-              <span class="pill">Next.js 16</span>
-              <span class="pill">React 19</span>
-              <span class="pill">TypeScript</span>
-              <span class="pill">PostgreSQL</span>
-              <span class="pill">Prisma</span>
-              <span class="pill">React Flow</span>
-              <span class="pill">Redis</span>
-              <span class="pill">MinIO</span>
+        <details class="credentials reveal">
+          <summary>Credentials &amp; certifications</summary>
+          <div class="credentials-grid">
+            <div class="cred">
+              <p class="cred-label">Education</p>
+              <p class="cred-value">B.Sc. Computer Science — Alexandru Ioan Cuza University, Iași (2021–2024)</p>
+            </div>
+            <div class="cred">
+              <p class="cred-label">Security</p>
+              <p class="cred-value">
+                <a href="https://tryhackme.com/certificate/THM-UDEQNFDHMG" target="_blank" rel="noopener noreferrer">SOC Level 1</a>,
+                <a href="https://tryhackme.com/certificate/THM-0D2ACJQ9DS" target="_blank" rel="noopener noreferrer">DevSecOps</a>,
+                Security Engineer, Jr Penetration Tester — TryHackMe
+              </p>
+            </div>
+            <div class="cred">
+              <p class="cred-label">Data</p>
+              <p class="cred-value">Meta Data Analyst · Google Business Intelligence · Advanced SQL, Data Cleaning, AI Ethics (Kaggle) · Advanced Tableau (CFI)</p>
+            </div>
+            <div class="cred">
+              <p class="cred-label">Languages</p>
+              <p class="cred-value">Romanian (native) · English (C2)</p>
             </div>
           </div>
-        </div>
+        </details>
       </div>
+    </section>
 
-      <div class="projects-grid">
+    <!-- Technical Writing -->
+    <section class="section section-alt" id="writing" aria-labelledby="writing-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-eyebrow">05 · Selected Technical Writing</p>
+          <h2 class="section-title" id="writing-title">Notes on systems, in progress.</h2>
+          <p class="section-lede">Long-form technical writing on the decisions behind the systems above — graph data models, workflow engines, detection pipelines, multi-tenant invariants. Drafts are in flight; pieces will be linked here as they ship.</p>
+        </header>
 
-        <div class="project-card reveal">
-          <h3 class="project-title"><svg class="project-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Vulnerable Web App</h3>
-          <p class="project-desc">End-to-end security assessment of a deliberately vulnerable Next.js app. STRIDE threat modeling, OWASP Top 10 analysis.</p>
-          <div class="project-pills">
-            <span class="pill">Next.js</span>
-            <span class="pill">PostgreSQL</span>
-            <span class="pill">Docker</span>
-            <span class="pill">Security</span>
-          </div>
-          <a href="https://github.com/LucaStefan112/Vulnerable-Web-App" target="_blank" rel="noopener noreferrer" class="project-link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            View on GitHub
+        <ul class="writing-list reveal">
+          <li class="writing-item upcoming">
+            <p class="writing-tag">In draft</p>
+            <h3 class="writing-title">Why I chose a DAG, not a state machine, for Processly's workflow engine</h3>
+            <p class="writing-summary">The case for branch-parallel execution as the authoring primitive — and the cost of admitting it.</p>
+          </li>
+          <li class="writing-item upcoming">
+            <p class="writing-tag">In draft</p>
+            <h3 class="writing-title">Graph spatial models in production: lessons from Mazely</h3>
+            <p class="writing-summary">Why a 20-entity graph beat a flat coordinate map the moment accessibility constraints arrived.</p>
+          </li>
+          <li class="writing-item upcoming">
+            <p class="writing-tag">Planned</p>
+            <h3 class="writing-title">LLM-assisted detection rules behind a CI/CD gate</h3>
+            <p class="writing-summary">Treating model output as untrusted input, and why detection pipelines force the discipline.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-wrap">
+        <header class="section-head reveal">
+          <p class="section-eyebrow">06 · Collaboration</p>
+          <h2 class="section-title" id="contact-title">Open to senior systems &amp; security engineering work.</h2>
+          <p class="section-lede">Currently selective about Staff Engineer, founding engineer, and senior systems / security roles — remote, EU or US time zones. Open to advisory conversations on multi-tenant SaaS architecture and detection pipelines.</p>
+        </header>
+
+        <div class="contact-grid reveal">
+          <a href="mailto:lucastefantamasdev@gmail.com" class="contact-item">
+            <span class="contact-key">Email</span>
+            <span class="contact-val">lucastefantamasdev@gmail.com</span>
+          </a>
+          <a href="https://github.com/LucaStefan112" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <span class="contact-key">GitHub</span>
+            <span class="contact-val">github.com/LucaStefan112</span>
+          </a>
+          <a href="https://www.linkedin.com/in/luca-%C8%99tefan-tama%C8%99-a40282229/" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <span class="contact-key">LinkedIn</span>
+            <span class="contact-val">Luca-Ștefan Tamaș</span>
+          </a>
+          <a href="tel:+40734950060" class="contact-item">
+            <span class="contact-key">Phone</span>
+            <span class="contact-val">+40 734 950 060</span>
           </a>
         </div>
-
-        <div class="project-card reveal">
-          <h3 class="project-title"><svg class="project-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> MedConnect</h3>
-          <p class="project-desc">Healthcare appointment scheduling platform with patient/doctor workflows and medical document management.</p>
-          <div class="project-pills">
-            <span class="pill">Next.js</span>
-            <span class="pill">Node.js</span>
-            <span class="pill">MongoDB</span>
-            <span class="pill">TypeScript</span>
-          </div>
-          <a href="https://github.com/LucaStefan112/MedConnect" target="_blank" rel="noopener noreferrer" class="project-link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            View on GitHub
-          </a>
-        </div>
-
-        <div class="project-card reveal">
-          <h3 class="project-title"><svg class="project-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> Electron</h3>
-          <p class="project-desc">Desktop circuit board design and simulation app. 229 commits, real-time physics simulation.</p>
-          <div class="project-pills">
-            <span class="pill">C++</span>
-            <span class="pill">Graphics</span>
-            <span class="pill">Simulation</span>
-          </div>
-          <a href="https://github.com/LucaStefan112/Electron" target="_blank" rel="noopener noreferrer" class="project-link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            View on GitHub
-          </a>
-        </div>
-
-        <div class="project-card reveal">
-          <h3 class="project-title"><svg class="project-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg> Custom Compiler</h3>
-          <p class="project-desc">Compiler implementation using Lex and Yacc. Complete lexing/parsing/generation pipeline. 100+ commits.</p>
-          <div class="project-pills">
-            <span class="pill">C</span>
-            <span class="pill">Lex</span>
-            <span class="pill">Yacc</span>
-            <span class="pill">Compilers</span>
-          </div>
-          <a href="https://github.com/LucaStefan112/Custom-Compiler" target="_blank" rel="noopener noreferrer" class="project-link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            View on GitHub
-          </a>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section class="section contact" id="contact">
-    <div class="container">
-      <h2 class="section-title reveal">Let's Work Together</h2>
-      <p class="contact-subtitle reveal">Open to remote Senior Engineer / Tech Lead roles (EU &amp; US)</p>
-      <div class="contact-grid">
-        <a href="mailto:lucastefantamasdev@gmail.com" class="contact-item reveal">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
-          <span>lucastefantamasdev@gmail.com</span>
-        </a>
-        <a href="tel:+40734950060" class="contact-item reveal">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          <span>+40 734 950 060</span>
-        </a>
-        <a href="https://github.com/LucaStefan112" target="_blank" rel="noopener noreferrer" class="contact-item reveal">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-          <span>github.com/LucaStefan112</span>
-        </a>
-        <a href="https://www.linkedin.com/in/luca-%C8%99tefan-tama%C8%99-a40282229/" target="_blank" rel="noopener noreferrer" class="contact-item reveal">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          <span>LinkedIn Profile</span>
-        </a>
-      </div>
-    </div>
-  </section>
+  </main>
 
-  <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Luca-&#536;tefan Tama&#537; &middot; Built with HTML, CSS &amp; JavaScript</p>
+    <div class="container footer-inner">
+      <p>&copy; 2026 Luca-Ștefan Tamaș</p>
+      <p class="footer-note">Static site, hand-written. Hosted on GitHub Pages.</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

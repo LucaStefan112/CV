@@ -1,96 +1,86 @@
-/* ============================================
-   Navbar scroll behavior
-   ============================================ */
 (function () {
+  'use strict';
+
   const navbar = document.getElementById('navbar');
   const navToggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');
   const allNavLinks = document.querySelectorAll('.nav-link');
 
-  // Scroll — add background to navbar
+  /* Navbar background on scroll */
   function handleNavScroll() {
-    if (window.scrollY > 60) {
+    if (window.scrollY > 40) {
       navbar.classList.add('scrolled');
     } else {
       navbar.classList.remove('scrolled');
     }
   }
-
   window.addEventListener('scroll', handleNavScroll, { passive: true });
   handleNavScroll();
 
-  // Mobile hamburger toggle
+  /* Mobile menu */
+  function setMenu(open) {
+    navToggle.classList.toggle('open', open);
+    navLinks.classList.toggle('open', open);
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+
   navToggle.addEventListener('click', function () {
-    navToggle.classList.toggle('open');
-    navLinks.classList.toggle('open');
+    setMenu(!navLinks.classList.contains('open'));
   });
 
-  // Close mobile menu on link click
   allNavLinks.forEach(function (link) {
-    link.addEventListener('click', function () {
-      navToggle.classList.remove('open');
-      navLinks.classList.remove('open');
-    });
+    link.addEventListener('click', function () { setMenu(false); });
   });
 
-  // Close mobile menu on outside click
   document.addEventListener('click', function (e) {
     if (
       navLinks.classList.contains('open') &&
       !navLinks.contains(e.target) &&
       !navToggle.contains(e.target)
     ) {
-      navToggle.classList.remove('open');
-      navLinks.classList.remove('open');
+      setMenu(false);
     }
   });
 
-  /* ============================================
-     Scroll spy — highlight active nav link
-     ============================================ */
-  var sections = document.querySelectorAll('.section');
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && navLinks.classList.contains('open')) {
+      setMenu(false);
+      navToggle.focus();
+    }
+  });
+
+  /* Scroll spy */
+  const sections = document.querySelectorAll('section[id]');
 
   function updateActiveLink() {
-    var scrollPos = window.scrollY + 150;
+    const scrollPos = window.scrollY + 160;
 
     sections.forEach(function (section) {
-      var id = section.getAttribute('id');
-      var top = section.offsetTop;
-      var height = section.offsetHeight;
-
+      const id = section.getAttribute('id');
+      const top = section.offsetTop;
+      const height = section.offsetHeight;
       if (scrollPos >= top && scrollPos < top + height) {
         allNavLinks.forEach(function (link) {
-          link.classList.remove('active');
-          if (link.getAttribute('href') === '#' + id) {
-            link.classList.add('active');
-          }
+          link.classList.toggle('active', link.getAttribute('href') === '#' + id);
         });
       }
     });
   }
-
   window.addEventListener('scroll', updateActiveLink, { passive: true });
   updateActiveLink();
 
-  /* ============================================
-     Hero sequential fade-in
-     ============================================ */
-  var heroElements = document.querySelectorAll('.anim-hero');
-
-  heroElements.forEach(function (el) {
-    var delay = parseInt(el.getAttribute('data-delay'), 10) || 0;
-    setTimeout(function () {
-      el.classList.add('visible');
-    }, 300 + delay * 200);
+  /* Hero entrance — sequential fade-in */
+  const heroEls = document.querySelectorAll('.anim-hero');
+  heroEls.forEach(function (el) {
+    const delay = parseInt(el.getAttribute('data-delay'), 10) || 0;
+    setTimeout(function () { el.classList.add('visible'); }, 200 + delay * 140);
   });
 
-  /* ============================================
-     Intersection Observer — reveal on scroll
-     ============================================ */
-  var revealElements = document.querySelectorAll('.reveal');
+  /* Reveal on scroll */
+  const revealEls = document.querySelectorAll('.reveal');
 
   if ('IntersectionObserver' in window) {
-    var observer = new IntersectionObserver(
+    const observer = new IntersectionObserver(
       function (entries) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
@@ -99,27 +89,19 @@
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
     );
-
-    revealElements.forEach(function (el) {
-      observer.observe(el);
-    });
+    revealEls.forEach(function (el) { observer.observe(el); });
   } else {
-    // Fallback: show all elements immediately
-    revealElements.forEach(function (el) {
-      el.classList.add('visible');
-    });
+    revealEls.forEach(function (el) { el.classList.add('visible'); });
   }
 
-  /* ============================================
-     Smooth scroll for anchor links (fallback)
-     ============================================ */
+  /* Smooth scroll fallback */
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
-      var targetId = this.getAttribute('href');
-      if (targetId === '#') return;
-      var target = document.querySelector(targetId);
+      const targetId = this.getAttribute('href');
+      if (targetId === '#' || targetId.length < 2) return;
+      const target = document.querySelector(targetId);
       if (target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth' });
